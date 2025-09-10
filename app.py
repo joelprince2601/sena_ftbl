@@ -992,7 +992,7 @@ def show_tactical_analysis_page():
     ])
 
     with tab1:
-        show_tactical_video_upload()
+        show_tactical_video_upload(config)
 
     with tab2:
         show_hawkeye_analysis_section(config)
@@ -1006,7 +1006,7 @@ def show_tactical_analysis_page():
     with tab5:
         show_tactical_analytics_section()
 
-def show_tactical_video_upload():
+def show_tactical_video_upload(config):
     """Show video upload section for tactical analysis"""
     st.markdown("## 📹 Upload Video for Tactical Analysis")
     st.info("Upload a football match video for comprehensive tactical analysis including player tracking, formation analysis, and Hawk-Eye homography mapping.")
